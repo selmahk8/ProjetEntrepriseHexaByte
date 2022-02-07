@@ -1,0 +1,44 @@
+.link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #0066FF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.link:HOVER {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #0066FF;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+.link-title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #F5F5F5;
+	text-decoration: none;
+	font-weight: bold;
+}
+.link-title:HOVER {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #F5F5F5;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+.form {
+	color: #000000; 
+	border: 1px solid #336699; 
+	background-color: #ACC8E6
+}
+.form2 {
+	color: #000000; 
+	border: 1px solid #FFFFFF; 
+	background-color: #C0C0C0
+}

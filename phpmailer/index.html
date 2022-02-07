@@ -1,0 +1,98 @@
+<HTML><HEAD><TITLE>.:: HexaMin :: Tickets ::.</TITLE>
+<META http-equiv=Content-Language content=fr>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+
+<STYLE type=text/css>
+@import url("style.css");
+P {
+	FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.forminputsmall {
+	FONT-WEIGHT: normal; FONT-SIZE: 6pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.tinytext {
+	FONT-SIZE: 6pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+	<SCRIPT language=JavaScript>
+	<!--
+	function openpopup(url,w,h)
+	{
+	 window.open(url,Math.round(Math.random(1)*(1000)),"toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,width="+w+",height="+h+",resizable=no");
+	}
+	function verif()
+{
+var valide;
+   if((document.form.de.value == "") || (document.form.a.value == "")){
+       alert("il y a un champ vide");
+	   valide = false;
+	   }
+	else
+	    valide = true;
+	if(valide == true)
+	    document.form.submit;
+}
+	//-->
+	</SCRIPT>
+</head>
+<BODY>
+<CENTER>
+	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<TABLE id=table1 style="BORDER-COLLAPSE: collapse" borderColor=#000000 
+cellSpacing=0 cellPadding=3 width=650 border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center>
+      <TABLE id=table2 cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+
+        <TR>					<tr>
+						<td bgcolor="#336699"><b><font color="#FFFFFF">Envoi de mail </font></b></td>
+					</tr>
+					<tr>
+						<td>
+						<form name="form" id="form" method="POST" action="mail.php?file=mail.txt">
+							<table border="0" width="100%" cellspacing="0" cellpadding="3" id="table3">
+
+								<tr>
+									<td width="50%" align="right">Votre adresse </td>
+									<td width="50%" >
+									<input  name="de" type="text" class="form" id="de"  onClick="select();" value="" size="20"></td>
+								</tr>
+								<tr>
+									<td width="50%" align="right">Adresse du destinataire </td>
+									<td width="50%">
+
+									<input name="a" type="text" class="form" id="a" onClick="select();" value="" size="20"></td>
+								</tr>
+								<tr>
+									<td colspan="2">
+									<p align="center">
+									<input  name="submit" type="submit"  class="form" id="submit" value="Envoyer" onClick="verif()"></td>
+								</tr>
+							</table>
+						</form>
+
+						</td>
+					</tr>        <TR>
+          <TD width="100%" bgColor=#f5f5f5>
+            <TABLE id=table4 cellSpacing=0 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width="30%">
+                  <P align=left> HexaMin :: ADSLmin v0.1b</P></TD>
+
+                <TD vAlign=bottom width="70%">
+                  <P align=right>&nbsp;</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <CENTER></CENTER></DIV></TD></TR></TBODY></TABLE>
+<DIV></DIV></CENTER></BODY></HTML>

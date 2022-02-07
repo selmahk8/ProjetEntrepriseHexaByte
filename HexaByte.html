@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HexaStyle.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <style> h4 { color: #4169E1; }  </style>
+    <div style="text-align: center;">
+    <img src="logohexabyte.jpg" alt="logohexabyte"/></div>
+    <title>Formulaire satisfaction client</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="background">
+            <div class="ball"></div>
+        </div>
+        <header class="header">
+            <h1 id="title"> Formulaire Client HexaByte</h1>
+            <p id="description"> <h4>Merci de prendre du temps pour nous aider à nous améliorer !</h4> </p>
+        </header>
+        
+        <form action="HexaByte.php" method="post" id="survey-form">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Nom: <span class="obligatoire">*</span></label>
+                <input type="text" name="nom" id="nom" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">E-mail: <span class="obligatoire">*</span></label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Numéro Fix: <span class="obligatoire">*</span></label>
+                <input type="tel" name="phone" id="phone" class="formControl" placeholder="Enter your number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type adress section -->
+            <div class="form-group">
+                <label for="address">Adresse <span class="clue">(optionel)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            </fieldset>
+            <!--  end of adress section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Quelle est votre type de contrat ? <span class="obligatoire">*</span></p>
+                <select name="contrat" id="contrat" class="formControl" required>
+                    <option value disabled selected >Select current contract</option>
+                    <option value="ADSL">ADSL</option>
+                    <option value="Hébergem">Hébergement</option>
+                    <option value="GPS">GPS</option>
+                    <option value="IP Fix">IP Fix</option>
+                    <option value="Nom domaine">Nom domaine</option>
+                </select>
+            </div> 
+            <!-- end of select section -->
+
+            <!--select section question-->
+            <label for="choix" id="quest">1) Recommanderiez-vous Hexabyte à un(e) ami(e), collègue ou membre de votre famille ?</label>
+            <select name="recommandation" id="quest">
+                <option value disabled selected="Répondre">Répondre</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+                <option value="Peut-être">Peut-être</option>
+                <option value="Ne sait pas">Ne sait pas</option>
+            </select>
+
+
+            <label for="choix" id="quest">2) Êtes-vous globalement satisfait(e) de votre expérience avec HexaByte ?</label>
+            <select name="experience" id="quest">
+                <option value disabled selected="Répondre">Répondre</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+                <option value="Peut-être">Peut-être</option>
+                <option value="Ne sait pas">Ne sait pas</option>
+            </select>
+
+
+            <label for="choix" id="quest">3) Sur une échelle de 1 à 5, comment évaluez-vous la qualité de notre service ?</label>
+            <select name="evaluation" id="quest">
+                <option value disabled selected="Répondre">Répondre</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+            <label for="choix" id="quest">4) Le service est-il performant ?</label>
+            <select name="servicee" id="quest">
+                <option value disabled selected="Répondre">Répondre</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+                <option value="Peut-être">Peut-être</option>
+                <option value="Ne sait pas">Ne sait pas</option>
+            </select>
+
+
+            <label for="choix" id="quest">5) Le prix est-il justifié ?</label>
+            <select name="prix" id="quest">
+                <option value disabled selected="Répondre">Répondre</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+                <option value="Peut-être">Peut-être</option>
+                <option value="Ne sait pas">Ne sait pas</option>
+            </select>
+            <!--End select question-->
+
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Partagez nous votre feedback:</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Envoyer</button>
+            </div>
+            <!--End textarea section-->
+
+        </form>
+    </div>
+    <script src="button.js"></script>
+    <script src="HexaScript.js"></script>
+</body>
+</html>
+
