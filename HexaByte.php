@@ -35,7 +35,7 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 
 
-//space between them
+
 //send email to admin
 
 $path = "/Applications/MAMP/htdocs/phpmailer/class.phpmailer.php";
@@ -52,17 +52,17 @@ $mail->IsSMTP();
 
 $mail->IsHTML(true);
 
-$mail->Host = 'smtp.hexabyte.tn';
+$mail->Host = 'host_here';
 
-$mail->From = "rochdi.benhassine@hexabyte.tn";
+$mail->From = "from_email";
 
-$mail->FromName = "HexaByte";
+$mail->FromName = "Email_Object";
 
-$mail->AddAddress('selmahadjkhelifa@gmail.com');
+$mail->AddAddress('admin_email_here');
 
-//$mail->AddReplyTo('rochdi.benhassine@hexabyte.tn');
+//$mail->AddReplyTo('reply_email_to');
 
-//$mail->AddCC('selma.hadjkhelifa@hexabyte.tn');
+//$mail->AddCC('add_New_email');
 
 $mail->Subject="Formulaire client";
 
