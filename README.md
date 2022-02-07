@@ -3,5 +3,3 @@
 <h3> Objectif: Création d'un formulaire de sactisfaction client avec un espace admin pour consultation des résultats </h3>
 
 Toute utilisation sans droit n'est pas permis
-
-<style> h3 { text-decoration: underline } </style>
